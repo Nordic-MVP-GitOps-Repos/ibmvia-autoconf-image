@@ -12,6 +12,6 @@ RUN git clone -b development https://github.com/thomas-mattsson/ibmvia_autoconf 
   git reset --hard 1a8ceb4314c3a54dbd476ede4ec3932ed2d8aeb6 && \
   pip install -r dev-requirements.txt && \
   python -m build && \
-# pip install dist/*.whl
+  pip install dist/*.whl
 
 CMD ["/bin/bash"]
